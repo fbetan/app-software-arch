@@ -1,0 +1,17 @@
+Project Reference: Web App
+
+Feature: Frontend / User Interface 
+	
+
+Feature: Data Collection Server
+
+
+Feature: Data Analysis Server
+
+Problem to solve: App will provide a simple and convienent interface to search for a politician's conflicts of interest, i.e. campaign donations, PACs, other sources of funding
+
+Product geared towards: Myself! As well as anyone who may be interested in how the rich and powerful can influence public policy 
+
+Unique: Currently there are a few sources of information of interest, but they are tedious to navigate and can present too much information at one time. 
+
+
