@@ -2,7 +2,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("https://fbetan.github.io/app-software-arch/")
 def main():
     return '''
     <form action="/echo_user_input" method="POST">
@@ -11,7 +11,7 @@ def main():
     </form>    
     '''
 
-@app.route("/echo_user_input", methods=["POST"])
+@app.route("https://fbetan.github.io/app-software-arch/echo_user_input", methods=["POST"])
 def echo_input():
     input_text = request.form.get("user_input","")
     return f"You entered: {input_text}" 
