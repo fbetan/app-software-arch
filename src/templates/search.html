@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Results</title>
+    </head>
+    <body>
+        <h1>Politicians by State</h1>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">There are {{ count }} Politicians in {{ state }}</h1>
+                {% for politician in politicians %}
+                    <p><strong>{{ politician.firstlast }}</strong></p>
+                    <p>Party: {{ politician.party }}</p>
+                    <p>Office: {{ politician.office }}</p>
+                    <p>First Elected: {{ politician.first_elected }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
