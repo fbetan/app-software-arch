@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Results</title>
+    </head>
+    <body>
+        <h1>Politicians by State</h1>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">{{ politician }}</h1>
+                {% for industry in industries %}
+                    <p><strong>{{ industry.industry_name }}</strong></p>
+                    <p>Industry Code: {{ industry.industry_code }}</p>
+                    <p>Individual Contributions: {{ industry.indivs }}</p>
+                    <p>PAC Contributions: {{ industry.pacs }}</p>
+                    <p>Total: {{ industry.total }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

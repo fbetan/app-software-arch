@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Politician Search Results</title>
+    </head>
+    <body>
+        {% for politician in politicians %}
+        <h1>{{ politician.firstlast }}</h1>
+        <div class="jumbotron">
+            <div class="container">
+                <p>Party: {{ politician.party }}</p>
+                <p>State: {{ politician.state }}</p>
+                <p>Office: {{ politician.office }}</p>
+                <p>Biological Sex: {{ politician.gender }}</p>
+                <p>First Elected: {{ politician.first_elected }}</p>
+                <p>Phone Number: {{ politician.phone }}</p>
+                <p>Fax: {{ politician.fax }}</p>
+                <p>Website: {{ politician.website }}</p>
+                <p>Office Address: {{ politician.congress_office }}</p>
+                <p>Bioguide ID: {{ politician.bioguide_id }}</p>
+                <p>VoteSmart ID: {{ politician.votesmart_id }}</p>
+                <p>FEC Candidate ID: {{ politician.feccandid }}</p>
+                <p>Twitter: {{ politician.twitter_id }}</p>
+                <p>Youtube: {{ politician.youtube_url }}</p>
+                <p>Facebook: {{ politician.facebook_id }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </body>
+</html>
