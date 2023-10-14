@@ -1,0 +1,2 @@
+import project.database_model
+from project import create_app

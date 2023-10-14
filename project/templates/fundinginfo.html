@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Funding Search Results</title>
+    </head>
+    <body>
+        <div>
+            <h1>{{ name }}</h1>
+        </div>
+        {% for funding in funding_info %}
+        <div class="jumbotron">
+            <div class="container">
+                <h3>Industry Name: {{ funding.industry_name }}</h3>
+                <p>Cycle: {{ funding.cycle }}</p>
+                <p>Individual Contributions: {{ funding.indivs }}</p>
+                <p>PAC Contributions: {{ funding.pacs }}</p>
+                <p>Total Funding: {{ funding.total }}</p>
+                <p>Origin: {{ funding.origin }}</p>
+                <p>Source: {{ funding.source }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </body>
+</html>

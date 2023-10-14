@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Politician Search App</title>
+    </head>
+    <body>
+        <h1>Select a Politician</h1>
+        <h3>Select from Dropdown</h3>
+        <form action="/analyze?f=pol" method="POST">
+            <label for="politicians">Politician</label>
+            <select name="cid" id="politicians">
+                {% for politician in politicians %}
+                <option value="{{ politician.cid }}"> {{ politician.firstlast }}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Search!">
+        </form>
+        <h1>Select an Industry</h1>
+        <h3>Select from Dropdown</h3>
+        <form action="/analyze?f=ind" method="POST">
+            <label for="induistries">Industry</label>
+            <select name="industry_code" id="industries">
+                {% for funding in fundings %}
+                <option value="{{ funding.industry_code  }}"> {{ funding.industry_name }}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Search!">
+        </form>     
+    </body>
+</html>

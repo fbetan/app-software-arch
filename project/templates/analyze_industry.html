@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Results</title>
+    </head>
+    <body>
+        <h1>Politicians by Funding</h1>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">{{ industry_name }}</h1>
+                {% for funding in fundings %}
+                    <p><strong>{{ funding.cand_name }} : {{ funding.total }}</strong></p>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
